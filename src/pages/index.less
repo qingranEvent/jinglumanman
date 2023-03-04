@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  .header {
+    background: #fff;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  .main {
+    // margin-top: 70px;
+    height: 100vh;
+    padding: 10px 0;
+    display: flex;
+    .slide {
+      width: 300px;
+      margin-right: 16px;
+      height: 100%;
+      .hot-lines {
+        .line-item {
+          .position {
+            display: flex;
+            flex-direction: column;
+            .row1 {
+              font-size: 15px;
+              .tit {
+                font-weight: 500;
+              }
+            }
+            .row2 {
+              color: #999;
+              .tit {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      .custom-line {
+        .btn-wrapper {
+          display: flex;
+          justify-content: space-between;
+        }
+        .item {
+          max-height: 280px;
+          overflow-y: auto;
+          .tit {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            z-index: 1;
+          }
+          :global {
+            .ant-list-item {
+              padding: 0;
+            }
+            a {
+              padding-left: 8px;
+              background: #fff;
+            }
+          }
+        }
+      }
+    }
+    .content {
+      flex-grow: 1;
+      min-width: 960px;
+      min-height: 500px;
+      max-height: 100%;
+    }
+    // 导航线路文本
+    .text-pannel  {
+      position: fixed;
+      right: 6px;
+      :global {
+        .amap-call, .planTitle {
+          display: none;
+        }
+      }
+    }
+  }
+  .footer {
+    height: 180px;
+  }
+}
+// 导航线路容器
