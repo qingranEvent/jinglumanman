@@ -240,7 +240,7 @@ export const initRightClckContextMenu = ({
   );
 
   //地图绑定鼠标右击事件——弹出右键菜单
-  mapInstance.on("rightclick", function (e: any) {
+  mapInstance.on("click", function (e: any) {
     contextMenu.open(mapInstance, e.lnglat);
     rightclickEvent = e;
   });

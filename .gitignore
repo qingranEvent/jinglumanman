@@ -9,3 +9,5 @@
 .swc
 .umi
 .DS_Store
+yarn-lock.yaml
+pnpm-locak.yaml
